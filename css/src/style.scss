@@ -1,0 +1,15 @@
+// основной файл, в нём все импорты и основные стили
+
+
+//блок с первичными файлами
+@import 'variables.scss';
+@import 'mixins.scss';
+@import 'default_css.scss';
+@import 'styleguide.scss';
+
+
+// стили стандартных шаблонов и кусков
+@import "partials/main";
+@import "partials/header";
+@import "partials/flats-list";
+@import "partials/flats";

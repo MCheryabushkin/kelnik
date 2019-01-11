@@ -1,0 +1,87 @@
+.flat-list {
+  &__item {}
+}
+
+.flats-item {
+  width: 320px;
+  border-radius: 3px;
+  border: 1px solid;
+  &__info {
+    padding: 0 30px;
+  }
+  &__image {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    @include respond-to(xl) {
+      height: 230px;
+    }
+  }
+
+  &__name {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    color: $green-dark;
+  }
+  &__dscr {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__dscr-item {
+    width: 33.33%;
+    line-height: 1;
+  }
+  &__facing {
+    padding-left: 8px;
+    color: $blue;
+    border-left: 3px solid $blue;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  &__square {
+    font-size: 18px;
+    font-weight: 400;
+    color: $txt;
+    span {
+      font-size: 13px;
+    }
+  }
+  &__floor {
+    font-size: 18px;
+    font-weight: 400;
+    color: $txt;
+    span {
+      font-size: 13px;
+    }
+  }
+
+  &__price {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  &__status {
+    padding: 14px 0;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.72px;
+    color: $white;
+    text-align: center;
+  }
+
+
+  &--booking {
+    border-color: $dirty;
+    .flats-item__status {
+      background: $dirty;
+    }
+  }
+}

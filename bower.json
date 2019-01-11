@@ -1,0 +1,24 @@
+{
+  "name": "main_gulp",
+  "description": "Main gulp css",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "aos": "^2.2.0",
+    "animate.css": "^3.5.2",
+    "bootstrap": "v4.1.0",
+    "bootstrap-select": "1.13.0-beta",
+    "fancybox": "^3.3.5",
+    "magnific-popup": "^1.1.0",
+    "slick-carousel": "^1.8.1",
+    "jquery_lazyload": "https://github.com/tuupola/jquery_lazyload.git#^1.9.7"
+  }
+}
