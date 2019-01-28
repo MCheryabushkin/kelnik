@@ -8,6 +8,10 @@
 
   &__nav {
     width: 74%;
+    display: none;
+    @include respond-to(lg) {
+      display: block;
+    }
     ul {
       margin: 16px 20px;
       display: flex;
@@ -41,4 +45,37 @@
    a {
      white-space: nowrap;
    }
+
+
+}
+
+
+.menu-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background: rgba($black, .8);
+  @include respond-to(lg) {
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    li {
+      margin: 10px 0;
+      a {
+        color: $white;
+        font-size: 20px;
+      }
+    }
+  }
 }

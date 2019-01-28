@@ -1,0 +1,87 @@
+.feedback {
+  &__block {
+    padding: 50px 40px;
+    background: $blue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    @include respond-to(lg) {
+      flex-direction: row;
+    }
+  }
+
+  &__text {
+    margin-bottom: 20px;
+    text-align: center;
+    @include respond-to(lg) {
+      margin: 0;
+      text-align: left;
+    }
+    h4 {
+      margin: 0 0 11px;
+      font-size: 34px;
+      font-weight: 400;
+      color: $white;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 400;
+      color: $white;
+    }
+  }
+}
+.feedback-form {
+  .group-item {
+    margin-bottom: 15px;
+    @include respond-to(md) {
+      margin: 0;
+    }
+  }
+  input[type="text"] {
+    margin: 0 50px 20px 0;
+    padding: 16px 20px;
+    color: $blue;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  button {
+    padding: 19px 45px;
+    text-transform: uppercase;
+    color: $white;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.96px;
+    background: $dirty;
+    border: none;
+    &:hover, &:active {
+      background: darken($dirty, 10%);
+    }
+  }
+
+  input[type='checkbox'] {
+    display: none;
+
+    &:checked + label:before {
+      background: $white url("/images/icons/checkbox-arrow.png") center no-repeat;
+      background-size: 60%;
+    }
+  }
+  label {
+    color: $white;
+    font-size: 18px;
+    font-weight: 400;
+    &:before {
+      content: '';
+      display: inline-block;
+      margin-right: 10px;
+      width: 18px;
+      height: 18px;
+      background: $white;
+      border-radius: 2px;
+      position: relative;
+      top: 2px;
+    }
+  }
+
+}
