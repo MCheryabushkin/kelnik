@@ -36,6 +36,9 @@
 
 
 <div class="menu-mobile">
+    <div class="header__menu-mobile">
+        <span></span>
+    </div>
     <ul>
         <li><a href="javascript:;">Объекты</a></li>
         <li><a href="javascript:;">Компания</a></li>
@@ -79,8 +82,8 @@
         <div class="flats__container">
             <div class="flats__filter">
                 <p>Сортировать по:</p>
-                <a href="javascript:;">Цене</a>
-                <a href="javascript:;">Комнатам</a>
+                <a href="javascript:;" id="price">Цене</a>
+                <a href="javascript:;" id="room">Комнатам</a>
             </div>
             <div class="flats__list flat-list">
                 <div class="flats-list__item flats-item flats-item--booking">
@@ -421,12 +424,17 @@
 <!-- /.page-footer -->
 
 
+<div class="toTop js_to-top">
+    <a href="#anchor"></a>
+</div>
+
 
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
+crossorigin="anonymous"></script>
+<script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
 <script src="/js/libs/wow.min.js"></script>
 <script src="/js/libs/slick.min.js"></script>
 

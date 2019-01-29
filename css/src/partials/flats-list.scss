@@ -3,17 +3,26 @@
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 auto;
   &__item {
     //align-self: stretch;
   }
 }
 
 .flats-item {
-  margin: 0 10px 50px;
-  width: 320px;
+  margin: 0 0 30px;
+  padding-top: 60px;
+  width: 290px;
   border-radius: 3px;
   border: 1px solid;
   position: relative;
+  @include respond-to(sm) {
+    margin: 0 10px 50px;
+    width: 320px;
+  }
+  @include respond-to(md) {
+    padding-top: 30px;
+  }
 
   &__discount {
     position: absolute;
@@ -41,6 +50,14 @@
     height: 18px;
     background: url("/images/del/star.png") center no-repeat;
     background-size: contain;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 17px;
+    &.active {
+      background: url("/images/del/star-active.png") center no-repeat;
+      background-size: contain;
+    }
   }
   &__image {
     margin-bottom: 40px;

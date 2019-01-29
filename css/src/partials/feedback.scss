@@ -1,11 +1,14 @@
 .feedback {
   &__block {
-    padding: 50px 40px;
+    padding: 50px 20px;
     background: $blue;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+    @include respond-to(sm) {
+      padding: 50px 40px;
+    }
     @include respond-to(lg) {
       flex-direction: row;
     }
@@ -32,6 +35,7 @@
   }
 }
 .feedback-form {
+  max-width: 100%;
   .group-item {
     margin-bottom: 15px;
     @include respond-to(md) {
@@ -39,11 +43,14 @@
     }
   }
   input[type="text"] {
-    margin: 0 50px 20px 0;
+    margin: 0 0 20px;
     padding: 16px 20px;
     color: $blue;
     font-size: 18px;
     font-weight: 400;
+    @include respond-to(sm) {
+      margin: 0 50px 20px 0;
+    }
   }
   button {
     padding: 19px 45px;
@@ -54,6 +61,7 @@
     letter-spacing: 0.96px;
     background: $dirty;
     border: none;
+    cursor: pointer;
     &:hover, &:active {
       background: darken($dirty, 10%);
     }
@@ -71,6 +79,7 @@
     color: $white;
     font-size: 18px;
     font-weight: 400;
+    cursor: pointer;
     &:before {
       content: '';
       display: inline-block;
