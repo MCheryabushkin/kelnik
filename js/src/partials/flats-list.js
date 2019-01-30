@@ -4,6 +4,7 @@ var row = $('.flat-list'),
     priceCounter = 0;
 
 var isotope = row.isotope({
+    filter: '.flats-item',
     itemSelector: '.flats-item',
     getSortData: {
         number: '.flats-item__square parseInt',
@@ -25,7 +26,6 @@ $('#room').on("click", function () {
             sortBy: 'number',
             sortAscending: false
         });
-        console.log(flatCounter);
         flatCounter = 1;
         $(this).removeClass('minToMax');
     } else {
@@ -33,7 +33,6 @@ $('#room').on("click", function () {
             sortBy: 'number',
             sortAscending: true
         });
-        console.log(flatCounter);
         flatCounter = 0;
         $(this).addClass('minToMax');
     }
