@@ -50,14 +50,14 @@
     margin: 17px 0 0 auto;
     width: 19px;
     height: 18px;
-    background: url("/images/del/star.png") center no-repeat;
+    background: url("../images/del/star.png") center no-repeat;
     background-size: contain;
     cursor: pointer;
     position: absolute;
     top: 0;
     right: 17px;
     &.active {
-      background: url("/images/del/star-active.png") center no-repeat;
+      background: url("../images/del/star-active.png") center no-repeat;
       background-size: contain;
     }
   }

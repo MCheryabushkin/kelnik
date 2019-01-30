@@ -1,103 +1,69 @@
 @font-face {
-  font-family: Gilroy;
-  src: local('Gilroy Light'),local('Gilroy-Light'),url("/css/fonts/gilroy/Gilroylight.woff2") format('woff2'),url("/css/fonts/gilroy/Gilroylight.woff") format('woff'),url("/css/fonts/gilroy/Gilroylight.ttf") format('truetype');
+  font-family: 'Open Sans';
+  src: local('Open Sans Light'),local('OpenSans-Light'),url("/css/fonts/opensans/opensanslight.woff2") format('woff2'),url("/css/fonts/opensans/opensanslight.woff") format('woff'),url("/css/fonts/opensans/opensanslight.ttf") format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Gilroy;
-  src: local('Gilroy ExtraBold'),local('Gilroy-ExtraBold'),url("/css/fonts/gilroy/Gilroyextrabold.woff2") format('woff2'),url("/css/fonts/gilroy/Gilroyextrabold.woff") format('woff'),url("/css/fonts/gilroy/Gilroyextrabold.ttf") format('truetype');
+  font-family: 'Open Sans';
+  src: local('Open Sans Light Italic'),local('OpenSansLight-Italic'),url("/css/fonts/opensans/opensanslightitalic.woff2") format('woff2'),url("/css/fonts/opensans/opensanslightitalic.woff") format('woff'),url("/css/fonts/opensans/opensanslightitalic.ttf") format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans'),local('OpenSans'),url("/css/fonts/opensans/opensans.woff2") format('woff2'),url("/css/fonts/opensans/opensans.woff") format('woff'),url("/css/fonts/opensans/opensans.ttf") format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Italic'),local('OpenSans-Italic'),url("/css/fonts/opensans/opensansitalic.woff2") format('woff2'),url("/css/fonts/opensans/opensansitalic.woff") format('woff'),url("/css/fonts/opensans/opensansitalic.ttf") format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Semibold'),local('OpenSans-Semibold'),url("/css/fonts/opensans/opensanssemibold.woff2") format('woff2'),url("/css/fonts/opensans/opensanssemibold.woff") format('woff'),url("/css/fonts/opensans/opensanssemibold.ttf") format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Semibold Italic'),local('OpenSans-SemiboldItalic'),url("/css/fonts/opensans/opensanssemibolditalic.woff2") format('woff2'),url("/css/fonts/opensans/opensanssemibolditalic.woff") format('woff'),url("/css/fonts/opensans/opensanssemibolditalic.ttf") format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Bold'),local('OpenSans-Bold'),url("/css/fonts/opensans/opensansbold.woff2") format('woff2'),url("/css/fonts/opensans/opensansbold.woff") format('woff'),url("/css/fonts/opensans/opensansbold.ttf") format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Bold Italic'),local('OpenSans-BoldItalic'),url("/css/fonts/opensans/opensansbolditalic.woff2") format('woff2'),url("/css/fonts/opensans/opensansbolditalic.woff") format('woff'),url("/css/fonts/opensans/opensansbolditalic.ttf") format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Open Sans Extrabold'),local('OpenSans-Extrabold'),url("/css/fonts/opensans/opensansextrabold.woff2") format('woff2'),url("/css/fonts/opensans/opensansextrabold.woff") format('woff'),url("/css/fonts/opensans/opensansextrabold.ttf") format('truetype');
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Gilroy;
-  src: url("/css/fonts/gilroy/Gilroy-SemiBold.woff") format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: Roboto;
-  src: local('Roboto Thin'),local('Roboto-Thin'),url("/css/fonts/roboto/Robotothin.woff2") format('woff2'),url("/css/fonts/roboto/Robotothin.woff") format('woff'),url("/css/fonts/roboto/Robotothin.ttf") format('truetype');
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: local('Roboto Thin Italic'),local('Roboto-ThinItalic'),url("/css/fonts/roboto/Robotothinitalic.woff2") format('woff2'),url("/css/fonts/roboto/Robotothinitalic.woff") format('woff'),url("/css/fonts/roboto/Robotothinitalic.ttf") format('truetype');
-  font-weight: 100;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: local('Roboto Light'),local('Roboto-Light'),url("/css/fonts/roboto/Robotolight.woff2") format('woff2'),url("/css/fonts/roboto/Robotolight.woff") format('woff'),url("/css/fonts/roboto/Robotolight.ttf") format('truetype');
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: local('Roboto Light Italic'),local('Roboto-LightItalic'),url("/css/fonts/roboto/Robotolightitalic.woff2") format('woff2'),url("/css/fonts/roboto/Robotolightitalic.woff") format('woff'),url("/css/fonts/roboto/Robotolightitalic.ttf") format('truetype');
-  font-weight: 300;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: local('Roboto'),local('Roboto-Regular'),url("/css/fonts/roboto/Roboto.woff2") format('woff2'),url("/css/fonts/roboto/Roboto.woff") format('woff'),url("/css/fonts/roboto/Roboto.ttf") format('truetype');
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: local('Roboto Italic'),local('Roboto-Italic'),url("/css/fonts/roboto/Robotoitalic.woff2") format('woff2'),url("/css/fonts/roboto/Robotoitalic.woff") format('woff'),url("/css/fonts/roboto/Robotoitalic.ttf") format('truetype');
-  font-weight: 400;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: local('Roboto Medium'),local('Roboto-Medium'),url("/css/fonts/roboto/Robotomedium.woff2") format('woff2'),url("/css/fonts/roboto/Robotomedium.woff") format('woff'),url("/css/fonts/roboto/Robotomedium.ttf") format('truetype');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url("/css/fonts/roboto/Robotomediumitalic.woff2") format('woff2'),url("/css/fonts/roboto/Robotomediumitalic.woff") format('woff'),url("/css/fonts/roboto/Robotomediumitalic.ttf") format('truetype');
-  font-weight: 500;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: local('Roboto Bold'),local('Roboto-Bold'),url("/css/fonts/roboto/Robotobold.woff2") format('woff2'),url("/css/fonts/roboto/Robotobold.woff") format('woff'),url("/css/fonts/roboto/Robotobold.ttf") format('truetype');
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: local('Roboto Bold Italic'),local('Roboto-BoldItalic'),url("/css/fonts/roboto/Robotobolditalic.woff2") format('woff2'),url("/css/fonts/roboto/Robotobolditalic.woff") format('woff'),url("/css/fonts/roboto/Robotobolditalic.ttf") format('truetype');
-  font-weight: 700;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: local('Roboto Black'),local('Roboto-Black'),url("/css/fonts/roboto/Robotoblack.woff2") format('woff2'),url("/css/fonts/roboto/Robotoblack.woff") format('woff'),url("/css/fonts/roboto/Robotoblack.ttf") format('truetype');
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Roboto;
-  src: local('Roboto #000 Italic'),local('Roboto-BlackItalic'),url("/css/fonts/roboto/Robotoblackitalic.woff2") format('woff2'),url("/css/fonts/roboto/Robotoblackitalic.woff") format('woff'),url("/css/fonts/roboto/Robotoblackitalic.ttf") format('truetype');
-  font-weight: 900;
+  font-family: 'Open Sans';
+  src: local('Open Sans Extrabold Italic'),local('OpenSans-ExtraboldItalic'),url("/css/fonts/opensans/opensansextrabolditalic.woff2") format('woff2'),url("/css/fonts/opensans/opensansextrabolditalic.woff") format('woff'),url("/css/fonts/opensans/opensansextrabolditalic.ttf") format('truetype');
+  font-weight: 800;
   font-style: italic;
 }

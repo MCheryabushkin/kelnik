@@ -23,7 +23,11 @@
        li {
          padding: 0 1%;
          display: block;
-
+        &:hover {
+          a {
+            color: $yellow;
+          }
+        }
        }
     }
     a {

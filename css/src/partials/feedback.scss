@@ -71,7 +71,7 @@
     display: none;
 
     &:checked + label:before {
-      background: $white url("/images/icons/checkbox-arrow.png") center no-repeat;
+      background: $white url("../images/icons/checkbox-arrow.png") center no-repeat;
       background-size: 60%;
     }
   }
