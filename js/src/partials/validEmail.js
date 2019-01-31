@@ -4,7 +4,7 @@ $('#email').blur(function() {
         if(pattern.test($(this).val())){
             $(this).css({'border' : '1px solid #569b44'});
             $('#valid').text('Success');
-            $('#valid').css("color", "#21d221");
+            $('#valid').css({ "color": "#21d221", "position": "relative" });
             $('.group-item input').hide();
             $('.group-item button').hide();
             $('.policy').hide();
