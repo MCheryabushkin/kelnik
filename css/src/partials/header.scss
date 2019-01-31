@@ -68,6 +68,7 @@
     justify-content: center;
     background: $green-dark;
     border-radius: 50%;
+    cursor: pointer;
     @include respond-to(lg) {
       display: none;
     }

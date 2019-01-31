@@ -404,10 +404,11 @@
                 <p>Подпишись и успей словить все акции</p>
             </div>
             <div class="feedback__form feedback-form">
-                <form action="">
+                <form>
                     <div class="group-item">
-                        <input type="text" placeholder="E-mail">
-                        <button type="submit">Подписаться</button>
+                        <input id="email" type="text" placeholder="E-mail">
+                        <span id="valid"></span>
+                        <button type="submit">Подписаться</input>
                     </div>
                     <div class="group-item policy">
                         <input type="checkbox" id="policy">
@@ -441,6 +442,7 @@
 <script src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
 <script src="js/libs/wow.min.js"></script>
 <script src="js/libs/slick.min.js"></script>
+<script src="js/libs/jquery.maskedinput.min.js"></script>
 
 <script src="js/scripts.js"></script>
 

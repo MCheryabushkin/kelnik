@@ -36,8 +36,13 @@
 }
 .feedback-form {
   max-width: 100%;
+  margin-top: 30px;
+  @include respond-to(lg) {
+    margin-top: 0;
+  }
   .group-item {
     margin-bottom: 15px;
+    position: relative;
     @include respond-to(md) {
       margin: 0;
     }
@@ -91,6 +96,11 @@
       position: relative;
       top: 2px;
     }
+  }
+  #valid {
+    position: absolute;
+    top: -30px;
+    left: 0;
   }
 
 }
