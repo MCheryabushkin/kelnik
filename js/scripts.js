@@ -167,6 +167,9 @@ $(document).ready(function ($) {
                 $(this).css({'border' : '1px solid #569b44'});
                 $('#valid').text('Success');
                 $('#valid').css("color", "#21d221");
+                $('.group-item input').hide();
+                $('.group-item button').hide();
+                $('.policy').hide();
             } else {
                 $(this).css({'border': '1px solid #ff0000'});
                 $('#valid').text('Не верно');
@@ -176,5 +179,9 @@ $(document).ready(function ($) {
             $(this).css({'border' : '1px solid #ff0000'});
             $('#valid').text('Поле email не должно быть пустым');
         }
+    });
+    
+    $('.group-item button').on("click", function () {
+        return false;
     });
 });

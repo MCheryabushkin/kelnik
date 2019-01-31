@@ -57,8 +57,9 @@
       font-weight: 400;
       cursor: pointer;
       position: relative;
+      border-bottom: 1px solid transparent;
       &:hover {
-        text-decoration: underline;
+        border-color: #002f2f;
       }
       &#price {
         margin-right: 45px;
@@ -80,6 +81,9 @@
       &.active {
         opacity: 1;
         border-bottom: 1px dotted;
+        &:hover {
+          border-bottom: 1px solid #002f2f;
+        }
       }
       &.minToMax:after {
         transform: rotate(180deg);
